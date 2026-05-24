@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: blue;
+    font-size: 20px;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 250px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -125px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
