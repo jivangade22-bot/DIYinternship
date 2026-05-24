@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Pricing</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Choose Your Plan</h1>
+
+        <select id="plan">
+            <option value="199">Basic - ₹199</option>
+            <option value="499">Standard - ₹499</option>
+            <option value="999">Premium - ₹999</option>
+        </select>
+
+        <div class="addons">
+            <label>
+                <input type="checkbox" value="100" class="addon">
+                Extra Storage (+₹100)
+            </label>
+
+            <label>
+                <input type="checkbox" value="200" class="addon">
+                Priority Support (+₹200)
+            </label>
+        </div>
+
+        <h2>Total Price: ₹<span id="total">199</span></h2>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
